@@ -1,0 +1,115 @@
+{
+	"info": {
+		"_postman_id": "c48b537d-2fb3-44d4-b94c-94164e75b17c",
+		"name": "django-knox-authentication",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18527721"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "firstname",
+							"value": "Keivan",
+							"type": "text"
+						},
+						{
+							"key": "lastname",
+							"value": "Ipchi Hagh",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "keivanipchihagh",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "keivanipchihagh@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "phone_number",
+							"value": "09197270223",
+							"type": "text"
+						},
+						{
+							"key": "birth_date",
+							"value": "2001-01-04",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "1234",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/auth/register/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"auth",
+						"register",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "keivanipchihagh@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "1234",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/auth/login/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"auth",
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
